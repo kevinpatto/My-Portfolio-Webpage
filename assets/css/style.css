@@ -48,6 +48,7 @@ h2,
 h3,
 h4 {
     font-weight: bolder;
+    text-align: center;
 }
 
 h1 {
@@ -140,13 +141,13 @@ main #about-me p {
 }
 
 /* work/projects styling */
+/* TODO: rework projects to look better with new formatting */
 main #work #projects {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     margin-left: 5%;
-
 }
 
 main #work #projects .project {
@@ -196,13 +197,89 @@ main #contact-me #contact-navigation a {
     border-bottom: 2px solid var(--secondary);
 }
 
-/* MEDIA QUERIES */
+/* HOVER TOOLTIP FUNCTIONALITY FOR UNFINISHED LINKS */
+
+.tba-tooltip {
+    position: relative;
+}
+
+.tba-tooltip:hover::after {
+    position: absolute;
+    left: -12px;
+    bottom: 24px;
+    min-width: 100px;
+    border: 1px #aaaaaa solid;
+    background-color: #13293d;
+    padding: 12px;
+    color: #fff;
+    font-size: 80%;
+    z-index: 1;
+    text-align: center;
+    content: "Coming Soon!";
+}
+
+#top-right:hover::after {
+    position: absolute;
+    top: 28px;
+    left: -28px;
+}
+
+/* TODO: add hover functionality to reworked projects */
+
+/* === MEDIA QUERIES === */
 /* tablet size */
 @media screen and (max-width: 980px) {
 
+    /* header changes */
+    header {
+        flex-direction: column;
+        padding: 0px;
+        padding-bottom: 8px;
+    }
+
+    header #my-name {
+        padding: 2px;
+    }
+
+    /* main changes */
+    main>section {
+        flex-direction: column;
+    }
+
+    main .hero {
+        height: 33vh;
+    }
+
+    main>section h1 {
+        text-align: center;
+        padding: 1.25%;
+        margin-bottom: 12px;
+        border-right: 0px;
+        border-bottom: var(--secondary) solid 2px;
+        max-width: 100%;
+    }
+
+    /* about-me changes */
+    main #about-me p {
+        text-align: center;
+    }
+
+    /* work changes */
+    main #work #projects {
+        width: 100%;
+        margin-left: 0%;
+    }
 }
 
 /* phone size */
 @media screen and (max-width: 768px) {
 
+    /* work changes (stack projects) */
+    main #work #projects {
+        flex-wrap: column;
+    }
+
+    main #work #projects .project {
+        width: 100%;
+    }
 }
