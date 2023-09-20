@@ -110,7 +110,7 @@ main .hero #hero-subtitle {
     bottom: 2.5%;
 }
 
-/* section styling */
+/* ALL section styling */
 main>section {
     display: flex;
     flex-direction: row;
@@ -128,10 +128,48 @@ main>section h1 {
     max-width: 150px;
 }
 
-main>#about-me>p {
+/* about-me styling */
+main #about-me p {
     margin: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--secondary);
+    line-height: 140%;
 }
 
+/* work/projects styling */
+main #work #projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 5%;
+
+}
+
+main #work #projects .project {
+    width: 49%;
+    position: relative;
+    height: 200px;
+    border: var(--primary) solid 6px;
+    margin-bottom: 12px;
+}
+
+main #work #projects .project .project-text {
+    display: flex;
+    position: absolute;
+    bottom: 2.5%;
+}
+
+main #work #projects .project #newest-text {
+    display: flex;
+    position: absolute;
+    right: 5%;
+}
+
+main #work #projects #big-project {
+    width: 100%;
+    height: 400px;
+}
 
 /* contact me nav bar styling */
 main #contact-me #contact-navigation {
