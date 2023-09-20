@@ -1,18 +1,31 @@
-# My-Portfolio-Webpage
-portfolio page to be updated as i go on
+# My Portfolio
 
-```
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
-```
+## Description
+
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+
+- What was your motivation?
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+- What problem does it solve?
+- What did you learn?
+
+This project was made to show employers an easy way to access all the projects I have worked on. With this website, an effective portfolio can be seen by employers to easily look through websites, and it serves as part of my portfolio as well. I learned a lot about CSS styling and how to turn a wireframe/reference image into a stylized webpage.
+
+## Installation
+
+N/A
+
+## Usage
+
+Use website to navigate to various projects I have worked on.
+
+![website screenshot](assets/images/reference/website-image)
+[Link to GitHub Pages website](https://kevinpatto.github.io/My-Portfolio-Webpage/)
+
+## Credits
+
+Thank you to my dog, Milo, for being my cover photo.
+
+## License
+
+MIT Liscense
